@@ -502,6 +502,9 @@ width: 50px;
     font-weight: 300;
     display: block;
     transition: all 0.3s ease;
+    margin-left: -40px;
+
+ 
 }
 
 .footerCol ul li a:hover{

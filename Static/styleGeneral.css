@@ -14,6 +14,9 @@ height: 100vh;
     background-color: white;
     text-align: center;
 }
+.navigationBar ul li:hover{
+    background: rgba(247, 209, 215,.8);
+}
 .navigationBar ul{
     display: inline-flex;
     list-style: none;
@@ -26,18 +29,14 @@ height: 100vh;
     z-index: 10;
 
 }
-.navigationBar ul li a{
+.navigationBar ul li a{ 
     text-decoration: none;
+    color: rgba(0, 0, 0, .8);}
+
+ul li.active a{
     color: rgb(248, 166, 179);
 }
 
-.active{
-    background: rgba(239, 145, 176,.3);
-    border-radius: 3px;
-}
- .navigationBar ul li a:hover{
-    color: rgba(0, 0, 0, 0.292);
-}
 .logo img{
     float: left;
     width: 80px;
@@ -47,14 +46,14 @@ height: 100vh;
 }
 .subMenu1{
     display: none;
-    border-radius: 5px;
-}
+    }
 .navigationBar ul li:hover .subMenu1{
     display: block;
     position: absolute;
-    background: rgba(247, 209, 215,.8);
+    background: rgba(245, 245, 245, 0.8);
     margin-top: 15px;
     margin-left: -15px;
+    
 }
 .navigationBar ul li:hover .subMenu1 ul{
     display: block;
@@ -72,8 +71,8 @@ height: 100vh;
     color: rgba(0, 0, 0, .8);
 
 }
-.navigationBar ul li a:hover .subMenu1 ul li a:hover{
-    color: rgba(0, 0, 0, .3);;
+.subMenu1 ul li a:hover{
+    color: rgba(0, 0, 0, .3);
 }
 .socialLinks a{
     color: rgb(248, 166, 179);
@@ -152,4 +151,3 @@ height: 100vh;
         height: 200px;
     }
 }
-

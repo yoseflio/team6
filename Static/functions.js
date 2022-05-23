@@ -8,3 +8,13 @@ function categoryName(){
 
     }
 }
+
+function openPopUp(src){
+    var popUp = document.getElementById("container");
+    var left = document.getElementsByClassName("left");
+    var photoBoxes = document.getElementsByClassName("photosCategory");
+    console.log(popUp);
+    popUp.classList.add("open-popUp");
+    left.classList.add("open-left");
+    photoBoxes.classList.remove("photosCategory");
+}

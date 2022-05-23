@@ -24,7 +24,9 @@ height: 100vh;
 }    
 .navigationBar ul li{
     width: 180px;
-    margin: 15px;
+    margin-left: 8px;
+    margin-top:15px;
+    margin-bottom: 15px;
     padding: 15px;
     z-index: 10;
 
@@ -60,7 +62,7 @@ ul li.active a{
     margin: 10px;
 }
 .navigationBar ul li:hover .subMenu1 ul li{
-    width: 140px;
+    width: 152px;
     padding: 10px;
     border-bottom: 1px dotted #fff;
     background: transparent;

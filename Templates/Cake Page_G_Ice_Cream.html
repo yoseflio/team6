@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Girl Ice Cream Cake</title>
     <link rel="stylesheet" type="text/css" href="../Static/styleGeneral.css">
-    <link rel="stylesheet" href="../Static/styleContact.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
+    <link rel="stylesheet" href="../Static/styleCakePage_G_Ice_Cream.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 </head>
 <body>
+    
     <nav class="navigationBar">
         <div class="logo">
             <img src="../Static/logo without.jpg">
@@ -53,16 +56,53 @@
         <div class="contact-box">
             <div class="left"></div>
             <div class="right">
-                <h2>Contect Us</h2>
-                    <input type="text" class="field" placeholder="Your Name">
-                    <input placeholder="Your Birthdate" class="field" type="text" onfocus="(this.type='date')" id="date">
-                    <input type="email" class="field" placeholder="Your Email">
-                    <input type="phone" class="field" placeholder="Your Phone">
-                    <textarea class="field area" placeholder="Message"></textarea>
-                    <label for="gender" class="field2">Gender:</label>
-                    <input type="radio" name="gender" class="field2" value="Male"> Male
-                    <input type="radio" name="gender" class="field2" value="Female"> Female
-                    <button class="btn">Send</button>
+                <h2>Girl Ice Cream Cake</h2>
+                <select name="cake size" class="field" onchange="calc()" required>
+                    <option disabled selected>Cake Size</option>
+                    <option >22 cm</option>
+                    <option >24 cm</option>
+                    <option >26 cm</option>
+                </select><br>
+                <select name="cake flavor" class="field" onchange="calc()" required>
+                    <option disabled selected>Cake Flavor</option>
+                    <option >Nutella</option>
+                    <option >Vanilla</option>
+                    <option >Kinder</option>
+                    <option >Pistachio</option>
+                </select><br>
+            
+                <input type="number" class="field" placeholder="Add Number" min="0" > 
+                <select name="deuration color" class="field" onchange="calc()" required>
+                    <option disabled selected>Number Color</option>
+                    <option >Red</option>
+                    <option >Green</option>
+                    <option >Blue</option>
+                    <option >White</option>
+                    <option >Black</option>
+                    <option >Pink</option>
+                    <option >Purple</option>
+                </select><br>
+                <input type="text" class="field" placeholder="Add Greeting" maxlength="30" > 
+                <select name="deuration color" class="field"  required>
+                    <option disabled selected>Greeting Color</option>
+                    <option >Red</option>
+                    <option >Green</option>
+                    <option >Blue</option>
+                    <option >White</option>
+                    <option >Black</option>
+                    <option >Pink</option>
+                    <option >Purple</option>
+                </select><br>
+                <div >
+                     <label for="Gluten Free" class="checkboxLabel">Gluten Free  <input type="checkbox" class="checkbox" name="Gluten Free"></label> 
+                    <label for="Dairy Free" class="checkboxLabel">Dairy Free  <input type="checkbox"  class="checkbox" name="Dairy Free"></label> 
+                    <label for="Dairy Free" class="checkboxLabel">Sugar Free  <input type="checkbox"  class="checkbox" name="Dairy Free"></label> 
+
+                </div>
+                <textarea  style="resize:none" class="field" placeholder="Special Requests" ></textarea>
+                   
+
+                    <button class="btn">Payment</button>
             </div>
         </div>
     </div>

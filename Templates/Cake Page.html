@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../Static/styleHome.css">
-    <link rel="stylesheet" href="../Static/styleGeneral.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="../Static/styleGeneral.css">
+    <link rel="stylesheet" href="../Static/styleCakePage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
-    <script src="../Static/functions.js"></script>
-</head>
-<body onload="categoryName()">
 
-    <div class="navigationBar">
+</head>
+<body>
+    <nav class="navigationBar">
         <div class="logo">
             <img src="../Static/logo without.jpg">
         </div>
         <ul>
             <li class="active"><a  href="home page.html">Home Page</a><i class="fa fa-solid fa-house"></i></li>
-            <li><a  href="signIn_Up3.html">Sign In/Log In</a></li>
+            <li><a  href="sign in.html">Sign In/Log In</a></li>
             <li><a  href="birthday cakes.HTML">Birthday Cakes</a><i class="fa fa-solid fa-cake-candles"></i>
                 <div class="subMenu1">
                     <ul>
@@ -50,22 +49,22 @@
                 </div>
             </li>
         </ul>
-    </div>
-        <div class="photosCategory">
-            <div class="pic Girls">
-                <a href="girl cakes.html"><img src="../Static/girls10.jpg" alt="Girl Cakes"></a>
-            </div>
-            <div class="pic Boys">
-                <a href="boy cakes.html"><img src="../Static/boys2.jpg" alt="Boy Cakes"></a>
-            </div>
-            <div class="pic Adult">
-                <a href="adult cakes.html"><img src="../Static/shavuot.jpeg" alt="Adult Cakes"></a>
-            </div>
-            <div class="pic pies">
-                <a href="pies.html"></a><img src="../Static/lemonPie.jpeg" alt="Lemon Pie">
-            </div>
+    </nav>
 
-          </div>
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Girl Ice Cream Cake</h2>
+                    <input placeholder="Your Birthdate" class="field" type="text" onfocus="(this.type='date')" id="date">
+                    <input type="email" class="field" placeholder="Your Email">
+                    <input type="phone" class="field" placeholder="Your Phone">
+                    <textarea class="field area" placeholder="Message"></textarea>
+                    <button class="btn">Payment</button>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="footerContainer">
             <div class="row">
@@ -84,13 +83,9 @@
                         <a href="#"><i class="fab fa-instagram"></i></li></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></li></a>
                     </div>
-                    
                 </div>
-
             </div>
         </div>
-    
     </footer>   
 </body>
-
 </html>

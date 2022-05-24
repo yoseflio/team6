@@ -8,3 +8,15 @@ function categoryName(){
 
     }
 }
+
+function openPopUp(src){
+    var popUp = document.getElementById("container");
+    var left = document.getElementById("left");
+    var photosCategory = document.getElementById("photosCategory");
+    var body = document.getElementById("body");
+    console.log(popUp);
+    popUp.classList.add("open-popUp");
+    left.classList.add("open-left");
+    photosCategory.classList.add("open-photoCategory")
+    body.classList.add("open-body");
+}

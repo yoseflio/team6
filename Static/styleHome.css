@@ -1,11 +1,12 @@
 .photosCategory{
     width: 70%;
+    height: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
-
 }
+
 .top{
     width: 100%;
     text-align: center;
@@ -16,6 +17,7 @@ h1{
     position: relative;
     margin: 20px 0;
 }
+
 h1::before{
     content: '';
     position: absolute;
@@ -129,16 +131,9 @@ h1::before{
     box-shadow: 0px, 0px, 19px, 5px rgba(0, 0, 0, 0.19);
 }
 
-.open-left{
-    height: 100%;
-    background: url("../Static/contact\ us\ photo.jpg") no-repeat center;
-    background-size: cover;    
-}
 .open-photoCategory{
     filter: blur(10px);
 }
-.open-body{
-    }
 
 .right{
     padding: 25px 40px;
@@ -177,12 +172,7 @@ h2:after{
 .checkboxLabel{
     font-size: 14px;
     margin-right: 23px;
-
 }
-
-
-
-
 
 .field:hover{
     background-color: rgba(0, 0, 0, 0.1);

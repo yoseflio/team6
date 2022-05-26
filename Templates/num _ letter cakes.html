@@ -1,13 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Static/stylephotos.css">
+    <link rel="stylesheet" href="../Static/styleGeneral.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
+    <script src="../Static/functions.js"></script>
 </head>
-<body>
-    
+<body id="body" onload="categoryName()">
+
+    <nav class="navigationBar">
+        <div class="logo">
+            <img src="../Static/logo without.jpg">
+        </div>
+        <ul>
+            <li><a href="home page.html">Home Page</a><i class="fa fa-solid fa-house"></i></li>
+            <li><a href="sign in.html">Sign In/Log In</a><i class="fa fa-solid fa-arrow-right-to-bracket"></i></li>
+            <li><a href="birthday cakes.HTML">Birthday Cakes</a><i class="fa fa-solid fa-cake-candles"></i>
+                <div class="subMenu1">
+                    <ul>
+                        <li><a href="girl cakes.html">Girl Cakes</a></li>
+                        <li><a href="boy cakes.html">Boy Cakes</a></li>
+                        <li><a href="adult cakes.html">Adult Cakes</a></li>
+                        <li class="active"><a href="">Number & Letter Cakes</a></li>
+                    </ul>
+                </div>
+            </li>
+            <i class="fa-duotone fa-rings-wedding"></i>
+            <li><a href="wedding cakes.HTML">Wedding Cakes</a><i class="fa fa-solid fa-gem"></i>
+                <div class="subMenu1">
+                    <ul>
+                        <li><a href="wedding cakes.HTML">Wedding Cakes</a></li>
+                        <li><a href="ring cakes.html">Ring Cakes</a></li>
+                        <li><a href="bachlorette party cakes.html">Bachelorette Party Cakes</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="classic cakes.HTML">Our Classics</a><i class="fa fas fa-chart-pie"></i>
+                <div class="subMenu1">
+                    <ul>
+                        <li><a href="pies.html">Pies</a></li>
+                        <li><a href="yeast cakes.html">Yeast Cakes</a></li>
+                        <li><a href="special cakes.html">Our Specials</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Contact Us.html">Contact Us</a><i class="fa fa-solid fa-file-signature"></i>
+        </ul>
+    </nav>
+    <div class="top">
+        <h1>Number & Letter Cakes</h1>
+    </div>
+    <div class="photosCategory" id="photosCategory">
+        <div class="pic Num_Letter1">
+            <a><img id="Num_Letter1" src="../Static/Num&Letter cakes/2021Dana.jpeg" onclick="openPopUp(this.src)"></a>
+        </div>
+        <div class="pic Num_Letter2">
+            <a><img src="../Static/Num&Letter cakes/berry number cake.jpeg" onclick="openPopUp()"></a>
+        </div>
+        <div class="pic Num_Letter3">
+            <a><img src="../Static/Num&Letter cakes/black & white number cake.jpeg" onclick="openPopUp()"></a>
+        </div>
+        <div class="pic Num_Letter4">
+            <a><img src="../Static/Num&Letter cakes/chocolate letter cake.jpeg" onclick="openPopUp()"></a>
+        </div>
+        <div class="pic Num_Letter5">
+            <a><img src="../Static/Num&Letter cakes/chocolate number cake.jpeg" onclick="openPopUp()"></a>
+        </div>
+        <div class="pic Num_Letter6">
+            <a><img src="../Static/Num&Letter cakes/colorfull number cake.jpeg" onclick="openPopUp()"></a>
+        </div>
+        <div class="pic Num_Letter7">
+            <a><img src="../Static/Num&Letter cakes/fruit letter cake.jpeg" onclick="openPopUp()"></a>
+        </div>
+        <div class="pic Num_Letter8">
+            <a><img src="../Static/Num&Letter cakes/pink flower number cake.jpeg" onclick="openPopUp()"></a>
+        </div>
+        <div class="pic Num_Letter9">
+            <a><img src="../Static/Num&Letter cakes/purple letter cake.jpeg" onclick="openPopUp()"></a>
+        </div>
+        <div class="pic Num_Letter10">
+            <a><img src="../Static/Num&Letter cakes/strawberry macaroon number cake.jpeg" onclick="openPopUp()"></a>
+        </div>
+        <div class="pic Num_Letter11">
+            <a><img src="../Static/Num&Letter cakes/white number cake.jpeg" onclick="openPopUp()"></a>
+        </div>
+    </div>
+
+    <div class="container" id="container">
+        <div class="contact-box">
+            <div class="left" id="left">
+                <img src="" id="left" alt="">
+            </div>
+            <div class="right">
+                <h2>Girl Ice Cream Cake</h2>
+                <select name="cake size" class="field" required>
+                    <option disabled selected>Cake Size</option>
+                    <option>22 cm</option>
+                    <option>24 cm</option>
+                    <option>26 cm</option>
+                </select><br>
+                <select name="cake flavor" class="field" required>
+                    <option disabled selected>Cake Flavor</option>
+                    <option>Nutella</option>
+                    <option>Vanilla</option>
+                    <option>Kinder</option>
+                    <option>Pistachio</option>
+                </select><br>
+
+                <input type="number" class="field" placeholder="Add Number" min="0">
+                <select name="deuration color" class="field" required>
+                    <option disabled selected>Number Color</option>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Pink</option>
+                    <option>Purple</option>
+                </select><br>
+                <input type="text" class="field" placeholder="Add Greeting" maxlength="30">
+                <select name="deuration color" class="field" required>
+                    <option disabled selected>Greeting Color</option>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Pink</option>
+                    <option>Purple</option>
+                </select><br>
+                <div>
+                    <label for="Gluten Free" class="checkboxLabel">Gluten Free <input type="checkbox" class="checkbox"
+                            name="Gluten Free"></label>
+                    <label for="Dairy Free" class="checkboxLabel">Dairy Free <input type="checkbox" class="checkbox"
+                            name="Dairy Free"></label>
+                    <label for="Dairy Free" class="checkboxLabel">Sugar Free <input type="checkbox" class="checkbox"
+                            name="Dairy Free"></label>
+
+                </div>
+                <textarea style="resize:none" class="field" placeholder="Special Requests"></textarea>
+
+
+                <button class="btn">Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="row">
+                <div class="footerCol">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footerCol">
+                    <h4>Follow Us</h4>
+                    <div class="socialLinks">
+                        <a href="#"><i class="fab fa-facebook-f"></i></li></a>
+                        <a href="#"><i class="fab fa-instagram"></i></li></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></li></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

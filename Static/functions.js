@@ -1,14 +1,12 @@
-function categoryName(){
+/* function categoryName(){
     var categories = document.getElementsByClassName("pic");
-    console.log(categories.length);
     for(var i = 0; i < categories.length; i++){
-        var textOf = categories[i].className;
-        console.log(textOf);
-        categories[i].style.setProperty('--className',textOf); 
-
+        var x = categories[i];
+        var y = x.getElementsByClassName("categoryName");
+        
     }
 }
-
+*/
 function openPopUp(s, cakeName){
     var popUp = document.getElementById("container");
     var left = document.getElementById("left");
@@ -16,7 +14,6 @@ function openPopUp(s, cakeName){
     var name = document.getElementById("name");
     popUp.classList.add("open-popUp");
     left.classList.add("open-left");
-    
     photosCategory.classList.add("open-photoCategory");
     name.innerHTML = cakeName;
     document.getElementById("oleft").src = s;

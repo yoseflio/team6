@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ring Cakes</title>
     <link rel="stylesheet" href="../Static/stylephotos.css">
     <link rel="stylesheet" href="../Static/styleGeneral.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -22,7 +22,7 @@
             <ul>
                 <li><a href="home page.html">Home Page</a><i class="fa fa-solid fa-house"></i></li>
                 <li><a href="sign in.html">Sign In/Log In</a><i class="fa fa-solid fa-arrow-right-to-bracket"></i></li>
-                <li><a href="birthday cakes.HTML">Birthday Cakes</a><i class="fa fa-solid fa-cake-candles"></i>
+                <li><a >Birthday Cakes</a><i class="fa fa-solid fa-cake-candles"></i>
                     <div class="subMenu1">
                         <ul>
                             <li><a href="girl cakes.html">Girl Cakes</a></li>
@@ -33,16 +33,16 @@
                     </div>
                 </li>
                 <i class="fa-duotone fa-rings-wedding"></i>
-                <li><a href="wedding cakes.HTML">Wedding Cakes</a><i class="fa fa-solid fa-gem"></i>
+                <li><a >Wedding Cakes</a><i class="fa fa-solid fa-gem"></i>
                     <div class="subMenu1">
                         <ul>
                             <li><a href="wedding cakes.HTML">Wedding Cakes</a></li>
-                            <li class="active"><a href="">Ring Cakes</a></li>
+                            <li><a href="ring cakes.html">Ring Cakes</a></li>
                             <li><a href="bachlorette party cakes.html">Bachelorette Party Cakes</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="classic cakes.HTML">Our Classics</a><i class="fa fas fa-chart-pie"></i>
+                <li><a >Our Classics</a><i class="fa fas fa-chart-pie"></i>
                     <div class="subMenu1">
                         <ul>
                             <li><a href="pies.html">Pies</a></li>
@@ -59,20 +59,26 @@
         </div>
         <div class="photosCategory" id="photosCategory">
             <div class="pic Rings1">
-                <a><img id="Rings1" src="../Static/ring cakes/2 level ring cake.jpeg" onclick="openPopUp(this.src)"></a>
+                <a><img id="Rings1" src="../Static/ring cakes/2 level ring cake.jpeg" onclick="openPopUp(this.src, '2 Level Ring Cake')"></a>
             </div>
             <div class="pic Rings2">
-                <a><img src="../Static/ring cakes/berry ring cake.jpeg" onclick="openPopUp()"></a>
+                <a><img src="../Static/ring cakes/berry ring cake.jpeg" onclick="openPopUp(this.src, 'Berry Ring Cake')"></a>
             </div>
             <div class="pic Rings3">
-                <a><img src="../Static/ring cakes/ring cake.jpeg" onclick="openPopUp()"></a>
+                <a><img src="../Static/ring cakes/ring cake.jpeg" onclick="openPopUp(this.src, 'Ring Cake')"></a>
+            </div>
+            <div class="pic Rings4">
+                <a><img src="../Static/ring cakes/Will You Marry Me.jpg" onclick="openPopUp(this.src, 'Will You Marry Me Cake')"></a>
+            </div>
+            <div class="pic Rings5">
+                <a><img src="../Static/ring cakes/G.jpg" onclick="openPopUp(this.src, ' White & Gold Ring Cake')"></a>
             </div>
         </div>
 
         <div class="container" id="container">
             <div class="contact-box">
                 <div class="left" id="left">
-                    <img src="" id="left" alt="">
+                    <img  id="oleft" alt="">
                 </div>
                 <div class="right">
                     <h2 id="name"></h2>
@@ -122,10 +128,10 @@
 
                     </div>
                     <textarea style="resize:none" class="field" placeholder="Special Requests"></textarea>
-
-
-                    <button class="btn">Payment</button>
-                </div>
+                    <form action="../Templates/paymentPage.html">
+                        <button class="btn">Payment</a></button>
+                    </form>               
+                  </div>
             </div>
         </div>
 
@@ -135,9 +141,15 @@
                     <div class="footerCol">
                         <h4>Company</h4>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Accessibility</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="../Templates/About Us.html">About Us</a></li>
+                            <li><a href="Our Team.html">Our Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerCol">
+                        <h4>Terms & Conditions</h4>
+                        <ul>
+                            <li><a href="../Templates/Accessibility.html">Accessibility</a></li>
+                            <li><a href="../Templates/Privacy Policy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div class="footerCol">
@@ -148,9 +160,9 @@
                             <a href="#"><i class="fab fa-linkedin-in"></i></li></a>
                         </div>
                     </div>
+                    </div>
                 </div>
             </div>
-
         </footer>
     </body>
 

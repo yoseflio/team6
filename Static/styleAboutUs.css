@@ -1,17 +1,17 @@
 .about{
     background: url(1c1ff2f8-ff4e-47b6-9205-67961482a5ec.jpg) no-repeat left;
     background-size: 55%;
-    background-color: #f72424;
     overflow: hidden;
     padding: 100px 0;   
 }
 
 .inner-section{
+    border-radius: 5px;
     width: 55%;
     float: right;
-    background-color: #04ab6b;
+    background-color: rgba(248, 166, 180, 0.5);
     padding: 140px;
-    box-shadow: 10px 10px 8px rgba(0,0,0,3);
+    box-shadow: 10px 10px 8px rgba(0,0,0,.2);
 }
 
 .inner-section h1{
@@ -36,15 +36,16 @@
     border-radius: 20px;
     padding: 8px;
     width: 200px;
-    background-color: rgb(162, 14, 113);
+    background-color:rgba(202, 136, 147, 0.702);
     color: white;
     cursor: pointer;
 }
 
 .skills button:hover{
-    transition: 1s;
-    background-color: #ecf;
-    color: #00999c;
+    transition: .5s;
+    background-color:rgba(244, 233, 235, 0.702);
+    color: rgba(202, 136, 147, 0.702);
+    
 }
 
 @media screen and (max-width: 1200px){

@@ -7,28 +7,35 @@
     }
 }
 */
+function o(){
+let inner = document.getElementById("container");
+let outer = document.getElementById("body");
+outer.addEventListener('click', closePopUp, true);
+}
 
-function openPopUp(image, cakeName){
+function openPopUp(image, cakeName) {
     var popUp = document.getElementById("container");
     var left = document.getElementById("left");
     var photosCategory = document.getElementById("photosCategory");
     var name = document.getElementById("name");
     var btn = document.getElementById("close");
-    popUp.style.visibility ="visible";
-    btn.style.visibility ="visible";
+    popUp.style.visibility = "visible";
+    btn.style.visibility = "visible";
     photosCategory.style.filter = "blur(10px)";
     left.classList.add("open-left");
     name.innerHTML = cakeName;
     document.getElementById("oleft").src = image;
 }
 
-function closePopUp(){
+function closePopUp() {
     var popUp = document.getElementById("container");
     var left = document.getElementById("left");
     var photosCategory = document.getElementById("photosCategory");
+    var name = document.getElementById("name");
     var btn = document.getElementById("close");
-    popUp.style.visibility ="hidden";
-    btn.style.visibility ="hidden";
+
+    popUp.style.visibility = "hidden";
+    btn.style.visibility = "hidden";
     photosCategory.style.filter = "blur(0px)";
     left.classList.remove("open-left");
 }
@@ -41,8 +48,8 @@ function calc() {
     var Age = document.getElementById("Age");
     var cake_size = document.getElementsByName("Gluten Free").value;
     var cake_size = document.getElementsByName("Gluten Free").value;
-    if (Age < 10){ Age.value = 10;}
-    else {Age.value = 20;}
+    if (Age < 10) { Age.value = 10; }
+    else { Age.value = 20; }
 
     var tot_price = val * price;
     var divobj = document.getElementById('total');

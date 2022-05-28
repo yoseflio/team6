@@ -16,6 +16,7 @@
     width: 100%;
     height: 100%;
     filter: blur(30px);
+    z-index: -1;
 }
 
 .contact-box{
@@ -103,4 +104,13 @@ h2:after{
 
 .btn:hover{
     background-color: #27ae60;
+}
+
+@media screen and (max-width:800px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+    }
 }

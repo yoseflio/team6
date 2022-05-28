@@ -86,3 +86,21 @@ h1::before{
   }
 
 
+  @media screen and (max-width:1000px){
+    .photosCategory{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:800px){
+    .photosCategory{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+  @media screen and (max-width:600px){
+    .photosCategory{
+        grid-template-columns: 1fr;
+    }
+}

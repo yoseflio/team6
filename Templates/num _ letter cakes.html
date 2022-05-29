@@ -113,14 +113,15 @@
                 <button id="close" onclick="closePopUp()">X</button>
                 <div class="right1">
                     <h2 id="name"></h2>
+                    <form class="form" action="paymentPage.html">
                     <select name="cake size" id="Size" class="field" onchange="totalIt()" required>
-                        <option disabled selected>Cake Size</option>
+                        <option disabled selected>Cake Size - Default 24cm</option>
                         <option data-price = "300" value="300">30 cm</option>
                         <option data-price = "400" vlaue="400">40 cm</option>
                         <option data-price = "500" value="500">50 cm</option>
                     </select><br>
                     <select name="cake flavor" class="field" required>
-                        <option disabled selected>Cream Flavor</option>
+                        <option disabled selected>Cream Flavor - Default Vanilla</option>
                         <option>Nutella</option>
                         <option>Vanilla</option>
                         <option>Kinder</option>
@@ -149,9 +150,8 @@
                         <label for="Dairy Free" class="checkboxLabel">Dairy Free <input name="Element" value="70" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
                         <label for="Suger Free" class="checkboxLabel" >Sugar Free<input name="Element" value="50" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
                     </div>
-                    <textarea style="resize:none" class="field" placeholder="Special Requests"></textarea>
+                    <textarea style="resize:none" class="field" placeholder="Special Requests- We keep the right to make an additional charge, depending on the requests"></textarea>
                     <h4>Total Price:<input value="" readonly="readonly" type="text" name="total" /></h4>
-                    <form action="../Templates/paymentPage.html">
                         <button name = "total" class="btn" value="0">Payment</a></button>
                     </form>     
                 </div>

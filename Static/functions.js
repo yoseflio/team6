@@ -168,6 +168,17 @@ function myFunction() {
     CardNumber.value = ""
 }
 
+function totalIt() {
+    var size = document.querySelector('select[name="cake size"]').value;
+    var input = document.getElementsByName("Element");
+    var total = 0;
+    for (var i = 0; i < input.length; i++) {
+      if (input[i].checked) {
+        total += parseFloat(input[i].value);
+      }
+    }
+    document.querySelector('input[name="total"]').value = total.toFixed(2) + size + "ILS";
+  }
 
 
 

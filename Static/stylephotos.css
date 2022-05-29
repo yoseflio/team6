@@ -11,6 +11,7 @@
 .top {
     width: 100%;
     text-align: center;
+    padding-top: 60px;
 }
 
 h1 {
@@ -100,9 +101,7 @@ h1::before {
     max-width: 850px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin: 5px 5px;
     background-color: #fff;
     box-shadow: 0px, 0px, 19px, 5px rgba(0, 0, 0, 0.19);
 }
@@ -111,7 +110,7 @@ h1::before {
     height: 100%;
     background: url("")no-repeat center;
     background-size: cover;
-    max-block-size: 550px;
+    max-block-size: 570px;
     
 }
 
@@ -122,8 +121,11 @@ h1::before {
     background-size: cover;
 }
 
-.right {
+.right1 {
     padding: 5% 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 h2 {
@@ -183,7 +185,6 @@ h2:after {
     outline: none;
     border: none;
     color: #fff;
-    transition: .3s;
 }
 
 .btn:hover {
@@ -196,11 +197,12 @@ body {
 
 #close {
     visibility: hidden;
-    margin-left: 100%;
+    margin-left: 92%;
     color: #7fb495;
     font-weight: bold;
     cursor: pointer;
     padding: 5px;
+    margin-top: 10px;
 }
 
 

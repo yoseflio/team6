@@ -104,7 +104,6 @@ h1::before {
     margin: 5px 5px;
     background-color: #fff;
     box-shadow: 0px, 0px, 19px, 5px rgba(0, 0, 0, 0.19);
-    max-block-size: 600px;
 
 }
 
@@ -112,7 +111,7 @@ h1::before {
     height: 100%;
     background: url("")no-repeat center;
     background-size: cover;
-    max-block-size: 600px;
+    max-block-size: 610px;
 
 }
 
@@ -217,12 +216,20 @@ body {
 margin: 10px;
 }
 
-
+@media screen and (max-width:1200px){
+    .top{
+        padding-top: 150px;  
+}
+}
   @media screen and (max-width:1000px){
     .photosCategory{
         grid-template-columns: repeat(3, 1fr);
     }
+    .top {
+    padding-top: 150px;
+    }
 }
+
 
 @media screen and (max-width:650px){
     .photosCategory{

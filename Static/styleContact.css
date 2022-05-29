@@ -1,4 +1,4 @@
-.container{
+.container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
     top: 70%;
 }
 
-.container:after{
+.container:after {
     content: '';
     position: absolute;
     left: 0;
@@ -20,7 +20,7 @@
     z-index: -1;
 }
 
-.contact-box{
+.contact-box {
     max-width: 850px;
     height: auto;
     display: grid;
@@ -33,24 +33,24 @@
     padding-top: 80px;
 }
 
-.left{
+.left {
     height: 100%;
     background: url("../Static/Read\ All\ About\ It_\ 10\ Almost\ Sold-Out\ Prints.jpg") no-repeat center;
     background-size: cover;
 }
 
-.right{
+.right {
     padding: 25px 40px;
 }
 
-h2{
+h2 {
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 10px;
-}   
+}
 
-h2:after{
-    content:'';
+h2:after {
+    content: '';
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -58,21 +58,21 @@ h2:after{
     height: 6px;
     width: 80px;
     border-radius: 3px;
-    background-color:  rgba(210, 235, 215, 0.7);
+    background-color: rgba(210, 235, 215, 0.7);
 }
 
-.field{
+.field {
     width: 100%;
     padding: 0.5rem 1rem;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0);
-    background-color:  rgba(230,230,230, 0.6);
+    background-color: rgba(230, 230, 230, 0.6);
     font-size: 1.1 rem;
     margin-bottom: 13px;
     transition: .3s;
 }
 
-.field2{
+.field2 {
     padding-right: 10px;
     font-size: 1.1 rem;
     margin-bottom: 13px;
@@ -80,23 +80,24 @@ h2:after{
     margin-left: 10px;
 }
 
-.field:hover{
+.field:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.field:focus{
+.field:focus {
     background-color: #fff;
-    border:2px solid rgba(30,85, 250, 0.47);
+    border: 2px solid rgba(30, 85, 250, 0.47);
 }
-.area{
+
+.area {
     min-height: 100px;
 }
 
-.btn{
+.btn {
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
-    background-color:  rgba(210, 235, 215, 0.7);
+    background-color: rgba(210, 235, 215, 0.7);
     cursor: pointer;
     outline: none;
     border: none;
@@ -104,15 +105,16 @@ h2:after{
     transition: .3s;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #27ae60;
 }
 
-@media screen and (max-width:800px){
-    .contact-box{
+@media screen and (max-width:800px) {
+    .contact-box {
         grid-template-columns: 1fr;
     }
-    .left{
+
+    .left {
         height: 200px;
     }
 }

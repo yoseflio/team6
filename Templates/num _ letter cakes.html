@@ -113,47 +113,52 @@
                 <button id="close" onclick="closePopUp()">X</button>
                 <div class="right1">
                     <h2 id="name"></h2>
-                    <select name="cake size" id="Size" class="field" onchange="totalIt()" required>
-                        <option disabled selected>Cake Size</option>
-                        <option data-price = "300" value="300">30 cm</option>
-                        <option data-price = "400" vlaue="400">40 cm</option>
-                        <option data-price = "500" value="500">50 cm</option>
-                    </select><br>
-                    <select name="cake flavor" class="field" required>
-                        <option disabled selected>Cream Flavor</option>
-                        <option>Nutella</option>
-                        <option>Vanilla</option>
-                        <option>Kinder</option>
-                        <option>Ferero</option>
-                        <option>Pretzel</option>
-                        <option>Salted Caramel</option>
-                        <option>Lotus</option>
+                    <form class="form" action="paymentPage.html">
+                        <select name="cake size" id="Size" class="field" onchange="totalIt2()" required>
+                            <option disabled selected>Cake Size - Default 24cm</option>
+                            <option data-price="200" value="200">30 cm</option>
+                            <option data-price="250" vlaue="250">40 cm</option>
+                            <option data-price="300" value="300">50 cm</option>
+                        </select><br>
+                        <select name="cake flavor" class="field" required>
+                            <option disabled selected>Cream Flavor - Default Vanilla</option>
+                            <option>Nutella</option>
+                            <option>Vanilla</option>
+                            <option>Kinder</option>
+                            <option>Ferero</option>
+                            <option>Pretzel</option>
+                            <option>Salted Caramel</option>
+                            <option>Lotus</option>
 
-                    </select><br>
+                        </select><br>
 
-                    <input type="number" class="field" placeholder="Amount of Numbers/Letters" min="1">
-                    <input type="text" class="field" placeholder="Add Numbers/Letters" maxlength="30">
-                    <input type="text" class="field" placeholder="Add Greeting" maxlength="30">
-                    <select name="deuration color" class="field" required>
-                        <option disabled selected>Greeting Color</option>
-                        <option>Red</option>
-                        <option>Green</option>
-                        <option>Blue</option>
-                        <option>White</option>
-                        <option>Black</option>
-                        <option>Pink</option>
-                        <option>Purple</option>
-                    </select><br>
-                    <div>
-                        <label for="Gluten Free" class="checkboxLabel">Gluten Free<input name="Element" value="100" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
-                        <label for="Dairy Free" class="checkboxLabel">Dairy Free <input name="Element" value="70" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
-                        <label for="Suger Free" class="checkboxLabel" >Sugar Free<input name="Element" value="50" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
-                    </div>
-                    <textarea style="resize:none" class="field" placeholder="Special Requests"></textarea>
-                    <h4>Total Price:<input value="" readonly="readonly" type="text" name="total" /></h4>
-                    <form action="../Templates/paymentPage.html">
-                        <button name = "total" class="btn" value="0">Payment</a></button>
-                    </form>     
+                        <input type="number" class="field" id="numOfCakes" placeholder="Amount of Numbers/Letters" onclick="totalIt2()" min="1">
+                        <input type="text" class="field" placeholder="Add Numbers/Letters" maxlength="30">
+                        <input type="text" class="field" placeholder="Add Greeting" maxlength="30">
+                        <select name="deuration color" class="field" required>
+                            <option disabled selected>Greeting Color</option>
+                            <option>Red</option>
+                            <option>Green</option>
+                            <option>Blue</option>
+                            <option>White</option>
+                            <option>Black</option>
+                            <option>Pink</option>
+                            <option>Purple</option>
+                        </select><br>
+                        <div>
+                            <label for="Gluten Free" class="checkboxLabel">Gluten Free<input name="Element" value="100"
+                                    class="checkbox" type="checkbox" onclick="totalIt2()" /></label>
+                            <label for="Dairy Free" class="checkboxLabel">Dairy Free <input name="Element" value="70"
+                                    class="checkbox" type="checkbox" onclick="totalIt2()" /></label>
+                            <label for="Suger Free" class="checkboxLabel">Sugar Free<input name="Element" value="50"
+                                    class="checkbox" type="checkbox" onclick="totalIt2()" /></label>
+                        </div>
+                        <textarea style="resize:none" class="field"
+                            placeholder="Special Requests (We keep the right to make an additional charge, depending on the requests)"></textarea>
+                        <h4 class="price">Total Price:<input value="" readonly="readonly" type="text" id="cakeTprice"
+                                name="total" /></h4>
+                        <button name="total" class="btn" value="0">Payment</a></button>
+                    </form>
                 </div>
             </div>
         </div>

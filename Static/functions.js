@@ -111,14 +111,28 @@ function totalIt() {
     document.querySelector('input[name="total"]').value = total.toFixed(2);
   }
 
-function move(){
-var cake_Price = document.getElementById("cakeTprice");
-var cake_Name = document.getElementById("name");
-localStorage.setItem("cname",cake_Name);
-localStorage.setItem("price", cake_Price);
-console.log(cake_Name);
-}
+  function totalIt2() {    
+    var input = document.getElementsByName("Element");
+    var size = document.getElementById("Size").value;
+    var numOfCakes = document.getElementById("numOfCakes").value;
+    if(numOfCakes == 0){numOfCakes = 1;}
+    var total = parseFloat(size)*numOfCakes;
+    for (var i = 0; i < input.length; i++) {
+      if (input[i].checked) {
+        total += parseFloat(input[i].value);
+      }
+    }
+    document.querySelector('input[name="total"]').value = total;
+  }
 
-document.getElementById("cakePriceP").innerHTML = localStorage.getItem("price");
-document.getElementById("name").innerHTML = localStorage.getItem("cname");
+// function move(){
+// var cake_Price = document.getElementById("cakeTprice");
+// var cake_Name = document.getElementById("name");
+// localStorage.setItem("cname",cake_Name);
+// localStorage.setItem("price", cake_Price);
+// console.log(cake_Name);
+// }
+
+// document.getElementById("cakePriceP").innerHTML = localStorage.getItem("price");
+// document.getElementById("name").innerHTML = localStorage.getItem("cname");
 

@@ -153,6 +153,7 @@ input::placeholder {
   border-radius: 5px;
   position: relative;
   width: 80%;
+  top: 13%;
 }
 .user_options-text {
   display: -webkit-box;

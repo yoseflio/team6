@@ -56,7 +56,13 @@ function calc() {
     var divobj = document.getElementById('total');
     divobj.value = tot_price;
 }
-
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('nav a').forEach(link => {
+  if(link.href.includes(`${activePage}`)){
+    link.classList.add('active');
+    console.log(activePage);
+  }
+})
 
 var myForm = document.getElementById("payment")
 var submitBtuttom = document.getElementById("btn");

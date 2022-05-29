@@ -83,10 +83,10 @@
                 <div class="right">
                 <button id="close" onclick="closePopUp()">X</button>
                 <div class="right1">                    <h2 id="name"></h2>
-                    <select name="cake size" class="field" required>
+                    <select name="cake size" id="Size" class="field" onchange="totalIt()" required>
                         <option disabled selected>Cake Size</option>
-                        <option>22 cm</option>
-                        <option>30 cm</option>
+                        <option value="250">22 cm</option>
+                        <option value="400">30 cm</option>
                     </select><br>
                     <select name="cake flavor" class="field" required>
                         <option disabled selected>Cream Flavor</option>
@@ -112,18 +112,15 @@
                         <option>Purple</option>
                     </select><br>
                     <div>
-                        <label for="Gluten Free" class="checkboxLabel">Gluten Free <input type="checkbox"
-                                class="checkbox" name="Gluten Free"></label>
-                        <label for="Dairy Free" class="checkboxLabel">Dairy Free <input type="checkbox" class="checkbox"
-                                name="Dairy Free"></label>
-                        <label for="Dairy Free" class="checkboxLabel">Sugar Free <input type="checkbox" class="checkbox"
-                                name="Dairy Free"></label>
-
+                        <label for="Gluten Free" class="checkboxLabel">Gluten Free<input name="Element" value="100" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
+                        <label for="Dairy Free" class="checkboxLabel">Dairy Free <input name="Element" value="70" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
+                        <label for="Suger Free" class="checkboxLabel" >Sugar Free<input name="Element" value="50" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
                     </div>
                     <textarea style="resize:none" class="field" placeholder="Special Requests"></textarea>
+                    <h4>Total Price:<input value="" readonly="readonly" type="text" name="total" /></h4>
                     <form action="../Templates/paymentPage.html">
-                        <button class="btn">Payment</a></button>
-                    </form>               
+                        <button name = "total" class="btn" value="0">Payment</a></button>
+                    </form>              
                   </div>
             </div>
         </div>

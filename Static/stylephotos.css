@@ -104,14 +104,16 @@ h1::before {
     margin: 5px 5px;
     background-color: #fff;
     box-shadow: 0px, 0px, 19px, 5px rgba(0, 0, 0, 0.19);
+    max-block-size: 600px;
+
 }
 
 .open-left {
     height: 100%;
     background: url("")no-repeat center;
     background-size: cover;
-    max-block-size: 570px;
-    
+    max-block-size: 600px;
+
 }
 
 #left img {
@@ -159,7 +161,11 @@ h2:after {
 
 .checkboxLabel {
     font-size: 14px;
-    margin-right: 23px;
+    margin-right: 13px;
+
+}
+.checkbox{
+   margin-left: 2px; 
 
 }
 
@@ -203,6 +209,12 @@ body {
     cursor: pointer;
     padding: 5px;
     margin-top: 10px;
+}
+.price{
+    margin: 2px;
+}
+#cakeTprice{
+margin: 10px;
 }
 
 

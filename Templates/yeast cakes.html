@@ -91,6 +91,7 @@
             <div class="right">
                 <button id="close" onclick="closePopUp()">X</button>
                 <div class="right1">
+<<<<<<< HEAD
                     <h2 id="name"></h2>
                     <select name="cake size" class="field" required>
                         <option disabled selected>Cake Size</option>
@@ -128,8 +129,42 @@
                     </form>
                 </div>
             </div>
+=======
+                <h2 id="name"></h2>
+                <select name="cake size" id="Size" class="field" onchange="totalIt()" required>
+                    <option disabled selected>Cake length</option>
+                    <option value="200">20 cm</option>
+                    <option value="250">25 cm</option>
+                    <option value="300">30 cm</option>
+                </select><br>
+              
+            
+                <input type="text" class="field" placeholder="Add Greeting" maxlength="30">
+                <select name="deuration color" class="field" required>
+                    <option disabled selected>Greeting Color</option>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Pink</option>
+                    <option>Purple</option>
+                </select><br>
+                <div>
+                    <label for="Gluten Free" class="checkboxLabel">Gluten Free<input name="Element" value="100" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
+                    <label for="Dairy Free" class="checkboxLabel">Dairy Free <input name="Element" value="70" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
+                    <label for="Suger Free" class="checkboxLabel" >Sugar Free<input name="Element" value="50" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
+                </div>
+                <textarea style="resize:none" class="field" placeholder="Special Requests"></textarea>
+                <h4>Total Price:<input value="" readonly="readonly" type="text" name="total" /></h4>
+                <form action="../Templates/paymentPage.html">
+                    <button name = "total" class="btn" value="0">Payment</a></button>
+                </form>
+                        </div>
+>>>>>>> 905cfb373a9e1c64b4a7b664f56e01887c0a5b25
         </div>
     </div>
+</div>
 
     <footer class="footer">
         <div class="footerContainer">

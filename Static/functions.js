@@ -1,18 +1,4 @@
-function categoryName(name) {
-    const nameOf = document.createElement('h3');
-    var categories = document.getElementsByClassName("pic");
-    nameOf.setAttribute('id', 'photoName');
-    nameOf.innerHTML = name;
-    nameOf.classList.add("photoName");
-    console.log(document.getElementsByClassName("pic Girls2"));
-    console.log(nameOf);
-}
 
-function o() {
-    let inner = document.getElementById("container");
-    let outer = document.getElementById("body");
-    outer.addEventListener('click', closePopUp, true);
-}
 
 function openPopUp(image, cakeName) {
     var popUp = document.getElementById("container");
@@ -41,21 +27,6 @@ function closePopUp() {
     left.classList.remove("open-left");
 }
 
-
-
-function calc() {
-    var cake_size = document.getElementsByName("cake size").value;
-    var cake_flavor = document.getElementById("cake flavor").value;
-    var Age = document.getElementById("Age");
-    var cake_size = document.getElementsByName("Gluten Free").value;
-    var cake_size = document.getElementsByName("Gluten Free").value;
-    if (Age < 10) { Age.value = 10; }
-    else { Age.value = 20; }
-
-    var tot_price = val * price;
-    var divobj = document.getElementById('total');
-    divobj.value = tot_price;
-}
 const activePage = window.location.pathname;
 const navLinks = document.querySelectorAll('nav a').forEach(link => {
   if(link.href.includes(`${activePage}`)){
@@ -79,47 +50,6 @@ let month = today.getMonth() +1;
 let year = today.getFullYear() ;
 console.log(month);
 console.log(year);
-submitBtuttom.disabled = false;
-//submitBtuttom.disabled = true;
-/*
-CardNumber.addEventListener("keyup", (e) => {
-    console.log(e.currentTarget.value)
-    if (e.currentTarget.value != "") {
-       submitBtuttom.disabled = false;
-    }
-   else {
-       submitBtuttom.disabled = true;
-      }
-
-});
-
-
-
-myForm.addEventListener('submit', (e) =>{
-    //let messages []
-    if (CardHolder.value == "" || CardHolder == null) {
-       alert('name is required');
-    }
-    else if (CardNumber.value.length <= 15) {
-        messages.push('Card number must be  16 characters');
-    }
-    else if (ExpiredM.value.length <= 1) {
-        messages.push('A month must contain two digits');
-    }
-    else if (ExpiredY.value.length <= 3) {
-        messages.push('A year must contain four digits');
-    }
-    else if (cvc.value.length <= 2) {
-        messages.push('A cvc must contain 3 digits');
-    }
-})
-
-this.classList.toggle('button--loading') ,setTimeout(myFunction, 3000)
-*/
-
-
-
-
 
 function mymessage(){
 
@@ -168,7 +98,27 @@ function myFunction() {
     CardNumber.value = ""
 }
 
+function totalIt() {    
+    var input = document.getElementsByName("Element");
+    var size = document.getElementById("Size").value;
+    var count = 0;
+    var total = parseFloat(size);
+    for (var i = 0; i < input.length; i++) {
+      if (input[i].checked) {
+        total += parseFloat(input[i].value);
+      }
+    }
+    document.querySelector('input[name="total"]').value = total.toFixed(2);
+  }
 
+function move(){
+var cake_Price = document.getElementById("cakeTprice");
+var cake_Name = document.getElementById("name");
+localStorage.setItem("cname",cake_Name);
+localStorage.setItem("price", cake_Price);
+console.log(cake_Name);
+}
 
-
+document.getElementById("cakePriceP").innerHTML = localStorage.getItem("price");
+document.getElementById("name").innerHTML = localStorage.getItem("cname");
 

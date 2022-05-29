@@ -1,5 +1,5 @@
 .about{
-    background: url(1c1ff2f8-ff4e-47b6-9205-67961482a5ec.jpg) no-repeat left;
+    background: url(../Static/about\ us.webp) no-repeat left;
     background-size: 55%;
     overflow: hidden;
     padding: 100px 0;   
@@ -18,6 +18,7 @@
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 900;
+    margin-left: 10px;
 }
 
 .text{
@@ -26,6 +27,7 @@
     line-height: 30px;
     text-align: justify;
     margin-bottom: 40px;
+    margin-left: 10px;
 }
 
 .skills button{
@@ -39,6 +41,7 @@
     background-color:rgba(202, 136, 147, 0.702);
     color: white;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .skills button:hover{

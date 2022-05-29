@@ -204,13 +204,20 @@ body {
     padding: 5px;
     margin-top: 10px;
 }
-
-
+@media screen and (max-width:1200px){
+    .top{
+        padding-top: 150px;  
+}
+}
   @media screen and (max-width:1000px){
     .photosCategory{
         grid-template-columns: repeat(3, 1fr);
     }
+    .top {
+    padding-top: 150px;
+    }
 }
+
 
 @media screen and (max-width:650px){
     .photosCategory{

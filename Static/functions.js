@@ -1,16 +1,17 @@
-/* function categoryName(){
+function categoryName(name) {
+    const nameOf = document.createElement('h3');
     var categories = document.getElementsByClassName("pic");
-    for(var i = 0; i < categories.length; i++){
-        var x = categories[i];
-        var y = x.getElementsByClassName("categoryName");
-        
-    }
+    nameOf.setAttribute('id', 'photoName');
+    nameOf.innerHTML = name;
+    nameOf.classList.add("photoName");
+    console.log(document.getElementsByClassName("pic Girls2"));
+    console.log(nameOf);
 }
-*/
-function o(){
-let inner = document.getElementById("container");
-let outer = document.getElementById("body");
-outer.addEventListener('click', closePopUp, true);
+
+function o() {
+    let inner = document.getElementById("container");
+    let outer = document.getElementById("body");
+    outer.addEventListener('click', closePopUp, true);
 }
 
 function openPopUp(image, cakeName) {

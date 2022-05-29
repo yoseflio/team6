@@ -68,6 +68,7 @@ h1::before {
     transform: scale(1.08);
 }
 
+
 #container {
     margin-top: 5%;
     position: absolute;
@@ -200,4 +201,24 @@ body {
     font-weight: bold;
     cursor: pointer;
     padding: 5px;
+}
+
+
+  @media screen and (max-width:1000px){
+    .photosCategory{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:650px){
+    .photosCategory{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+  @media screen and (max-width:500px){
+    .photosCategory{
+        grid-template-columns: 1fr;
+    }
 }

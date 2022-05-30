@@ -91,16 +91,13 @@
             <div class="right">
                 <button id="close" onclick="closePopUp()">X</button>
                 <div class="right1">
-<<<<<<< HEAD
                     <h2 id="name"></h2>
-                    <select name="cake size" class="field" required>
-                        <option disabled selected>Cake Size</option>
-                        <option>22 cm</option>
-                        <option>24 cm</option>
-                        <option>26 cm</option>
+                    <select name="cake size" class="field" id="Size" onchange="totalIt()" required>
+                        <option disabled selected>Cake Size - Defualt 24cm </option>
+                        <option value="200">20 cm</option>
+                        <option value="250">25 cm</option>
+                        <option value="300">30 cm</option>
                     </select><br>
-
-
                     <input type="text" class="field" placeholder="Add Greeting" maxlength="30">
                     <select name="deuration color" class="field" required>
                         <option disabled selected>Greeting Color</option>
@@ -113,57 +110,24 @@
                         <option>Purple</option>
                     </select><br>
                     <div>
-                        <label for="Gluten Free" class="checkboxLabel">Gluten Free <input type="checkbox"
-                                class="checkbox" name="Gluten Free"></label>
-                        <label for="Dairy Free" class="checkboxLabel">Dairy Free <input type="checkbox" class="checkbox"
-                                name="Dairy Free"></label>
-                        <label for="Dairy Free" class="checkboxLabel">Sugar Free <input type="checkbox" class="checkbox"
-                                name="Dairy Free"></label>
-
+                        <label for="Gluten Free" class="checkboxLabel">Gluten Free<input name="Element" value="100"
+                                class="checkbox" type="checkbox" onclick="totalIt()" /></label>
+                        <label for="Dairy Free" class="checkboxLabel">Dairy Free <input name="Element" value="70"
+                                class="checkbox" type="checkbox" onclick="totalIt()" /></label>
+                        <label for="Suger Free" class="checkboxLabel">Sugar Free<input name="Element" value="50"
+                                class="checkbox" type="checkbox" onclick="totalIt()" /></label>
                     </div>
-                    <textarea style="resize:none" class="field" placeholder="Special Requests"></textarea>
-
-
-                    <form action="../Templates/paymentPage.html">
-                        <button class="btn">Payment</a></button>
-                    </form>
-                </div>
-            </div>
-                <h2 id="name"></h2>
-                <form class="form" action="paymentPage.html">
-                <select name="cake size" id="Size" class="field" onchange="totalIt()" required>
-                    <option disabled selected>Cake length - Defualt 25cm</option>
-                    <option value="200">20 cm</option>
-                    <option value="250">25 cm</option>
-                    <option value="300">30 cm</option>
-                </select><br>
-              
-            
-                <input type="text" class="field" placeholder="Add Greeting" maxlength="30">
-                <select name="deuration color" class="field" required>
-                    <option disabled selected>Greeting Color</option>
-                    <option>Red</option>
-                    <option>Green</option>
-                    <option>Blue</option>
-                    <option>White</option>
-                    <option>Black</option>
-                    <option>Pink</option>
-                    <option>Purple</option>
-                </select><br>
-                <div>
-                    <label for="Gluten Free" class="checkboxLabel">Gluten Free<input name="Element" value="100" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
-                    <label for="Dairy Free" class="checkboxLabel">Dairy Free <input name="Element" value="70" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
-                    <label for="Suger Free" class="checkboxLabel" >Sugar Free<input name="Element" value="50" class="checkbox" type="checkbox" onclick="totalIt()" /></label>
-                </div>
-                <textarea style="resize:none" class="field" placeholder="Special Requests (We keep the right to make an additional charge, depending on the requests)"></textarea>
-                <h4 class="price">Total Price:<input value="" readonly="readonly" type="text" id="cakeTprice" name="total" /></h4>
-                <button name = "total" class="btn" value="0">Payment</a></button>
+                    <textarea style="resize:none" class="field"
+                        placeholder="Special Requests (We keep the right to make an additional charge, depending on the requests)"></textarea>
+                    <h4 class="price">Total Price:<input value="" readonly="readonly" type="text" id="cakeTprice"
+                            name="total" /></h4>
+                    <button name="total" class="btn" value="0">Payment</a></button>
                 </form>
-                        </div>
+                </div>
             </div>
+
         </div>
     </div>
-</div>
 
     <footer class="footer">
         <div class="footerContainer">
@@ -191,7 +155,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </footer>
 </body>
